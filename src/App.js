@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
 
+// library.add(faStroopwafel)
 class App extends Component {
   render() {
     return (
@@ -11,6 +14,7 @@ class App extends Component {
             <h3 className="masthead-brand purple">Current Domain</h3>
             <nav className="nav nav-masthead justify-content-center">
               <p>
+                <FontAwesomeIcon icon={faCoffee} />
                 <i className="fab fa-twitter-square fa-2x green"></i>&nbsp;&nbsp;&nbsp;
                 <i className="fab fa-facebook-square fa-2x green"></i>&nbsp;&nbsp;&nbsp;
                 <i className="fab fa-instagram fa-2x green"></i>&nbsp;&nbsp;&nbsp;
