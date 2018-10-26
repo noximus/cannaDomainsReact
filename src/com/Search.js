@@ -4,6 +4,19 @@ import Modal from "./Modal";
 const domainList = [
     {host:"CannaDomains",price:"150.00",noh:"500 mil hits"},
     {host:"DannaDomains2",price:"250.00",noh:"800 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
+    {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"},
     {host:"BannaDomains3",price:"350.00",noh:"1000 mil hits"}
 ]
 class Search extends Component {
@@ -16,7 +29,6 @@ class Search extends Component {
             Modal : false,
             selectedItem : null
         };
-
     }
     onHandleChange = (event) => {
         this.setState({ [event.target.name]: event.target.value, 
@@ -43,11 +55,10 @@ class Search extends Component {
                 </p>
                 <div>
                     <table className="table green">
-                        <caption className="purple">* footer note List of users</caption>
+                        
                         <thead className="orange">
                             <tr>
-                                <th scope="col">Key</th>
-                                <th scope="col">domain</th>
+                                <th scope="col">Domain Name</th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Hits</th>
                             </tr>
@@ -59,9 +70,8 @@ class Search extends Component {
                                     <tr key={obj.host + i} onClick={() => {
                                         this.onModalPopUp(obj);
                                     }}>
-                                        <th scope="row">{i}</th>
                                         <td>{obj.host}</td>
-                                        <td>{obj.price}</td>
+                                        <td>$ {obj.price}</td>
                                         <td>{obj.noh}</td>
                                     </tr>
                                 )
